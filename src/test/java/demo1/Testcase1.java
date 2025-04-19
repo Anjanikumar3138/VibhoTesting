@@ -17,7 +17,9 @@ public class Testcase1 {
 	@Test
    public static void users()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeDriver.exe");
+		// System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeDriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
